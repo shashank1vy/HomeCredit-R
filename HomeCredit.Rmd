@@ -7,6 +7,8 @@ output: pdf_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
 ```
 
 ## R Markdown
@@ -24,7 +26,7 @@ POS_CASH_balance = read.csv("E:/kaggle/homecredit/POS_CASH_balance.csv")
 ```
 
 ```{r}
-
+ggplot(application_train,colour = factor(CODE_GENDER)) + geom_point(aes(x=AMT_INCOME_TOTAL, y = AMT_CREDIT)) + xlim(0, 2e7)
 ```
 
 
