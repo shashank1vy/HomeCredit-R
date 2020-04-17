@@ -1,0 +1,30 @@
+---
+title: "HomeCredit"
+author: "Shashank Semwal"
+date: "4/17/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+```{r cars}
+application_train <- read.csv("E:/kaggle/homecredit/application_train.csv")
+application_train <- read.csv("E:/kaggle/homecredit/bureau.csv")
+application_train <- read.csv("E:/kaggle/homecredit/application_train.csv")
+bureau <- read.csv("E:/kaggle/homecredit/bureau.csv")
+bureau_balance <- read.csv("E:/kaggle/homecredit/bureau_balance.csv")
+credit_card_balance <- read.csv("E:/kaggle/homecredit/credit_card_balance.csv")
+installments_payments = read.csv("E:/kaggle/homecredit/installments_payments.csv")
+POS_CASH_balance = read.csv("E:/kaggle/homecredit/POS_CASH_balance.csv")
+```
+
+```{r}
+
+```
+
+
